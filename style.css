@@ -1,0 +1,49 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  margin-top: 25%;
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-container {
+  border: none;
+  background-color: hsl(11, 80%, 90%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#btnRock,
+#btnPaper,
+#btnScissors {
+  background-color: hsl(209, 80%, 70%);
+  width: 50%;
+  height: 100%;
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: none;
+  font-weight: bolder;
+  font-size: 1.5rem;
+  color: hsl(0, 0%, 100%);
+  font-family: Arial;
+  cursor: pointer;
+  margin: 2%;
+}
+
+#p0 {
+  color: hsl(120, 100%, 65%);
+}
+
+#c0 {
+  color: hsl(20, 100%, 65%)
+}
+
+h1,
+h3 {
+  text-align: center;
+}
