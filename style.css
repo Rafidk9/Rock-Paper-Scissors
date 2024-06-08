@@ -3,40 +3,41 @@ html {
   width: 100%;
 }
 
-body,h1 {
+body,
+h1 {
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-family: Arial;
   display: block;
   justify-content: center;
   align-items: center;
 }
-.popUp{
-  display: block;
-}
 
 .img-container {
   margin-top: 5%;
   width: fit-content;
-  /* border: 1px solid red; */
-  /* background-color: hsl(11, 80%, 90%); */
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
-#btnRock,
-#btnPaper,
-#btnScissors {
+#imgRock,
+#imgPaper,
+#imgScissors {
   background-color: hsl(210, 80%, 70%);
   width: 20%;
   height: 20%;
   padding: 10px 15px;
-  /* border: 1px solid red; */
   border-radius: 5px;
-  /* border: none; */
   cursor: pointer;
   margin: 1.5%;
+  transition: background-color 0.5s ease;
+}
+
+#imgRock:active,
+#imgPaper:active,
+#imgScissors:active {
+  background-color: hsl(210, 80%, 90%);
 }
 
 #p0 {
@@ -51,8 +52,20 @@ h1,
 h3 {
   text-align: center;
 }
-#message{
+
+#message {
   font-size: 3.5rem;
   text-align: center;
-  background-color: hsl(210, 80%, 70%);
+}
+
+.popUpWinColor {
+  background-color: #4cff4c;
+}
+
+.popUpLoseColor {
+  background-color: #ff884c;
+}
+
+.popUpTieColor {
+  background-color: hsl(0, 0%, 30%);
 }
